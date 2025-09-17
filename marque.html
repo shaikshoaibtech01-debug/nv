@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee & HTML Elements</title>
+</head>
+<body>
+  <h1>Marquee Tag</h1>
+  <p>
+    The <code>&lt;marquee&gt;</code> tag is used to create scrolling (moving) text or images inside a webpage.  
+    ⚠️ Note: The marquee tag is <b>deprecated</b> in HTML5 (not recommended for modern websites). Instead, use CSS animations.  
+  </p>
+
+  <h2>Examples of Marquee</h2>
+  <marquee direction="right">Scrolling Right →</marquee>
+  <marquee behavior="alternate">Bouncing Text</marquee>
+  <marquee scrollamount="20">Fast Scrolling</marquee>
+  <marquee scrolldelay="200">Slow Scroll with Delay</marquee>
+  <marquee loop="3">This scrolls 3 times only</marquee>
+
+  <hr>
+
+  <h1>HTML Elements</h1>
+  <p>An element = open tag + content + close tag.</p>
+  <pre>&lt;h1&gt;Hello World&lt;/h1&gt;</pre>
+  <h1>Hello World</h1>
+
+  <h2>Types of Elements</h2>
+
+  <h3>Inline Elements</h3>
+  <p>Stay in same line, take only required width.</p>
+  <p>
+    <a href="#">Link</a> <span>Span Text</span> <button>Button</button> 
+    <img src="https://via.placeholder.com/40" alt="sample">
+  </p>
+
+  <h3>Block Level Elements</h3>
+  <p>Always start on new line, take full width.</p>
+  <div style="border:1px solid black; padding:10px;">I am a div (block element)</div>
+  <p>I am a paragraph (block element)</p>
+
+  <h3>Inline-block Elements</h3>
+  <p>Stay inline but width & height can be set.</p>
+  <div style="display:inline-block; width:100px; height:50px; background:lightblue; margin:5px;">Box 1</div>
+  <div style="display:inline-block; width:100px; height:50px; background:lightgreen; margin:5px;">Box 2</div>
+
+  <hr>
+
+  <h1>Difference between Div and Span</h1>
+  <h3>Div:</h3>
+  <ul>
+    <li>Block-level element</li>
+    <li>Starts on new line, takes full width</li>
+    <li>Can set width & height</li>
+  </ul>
+  <div style="background:lightcoral; padding:10px;">This is a Div</div>
+
+  <h3>Span:</h3>
+  <ul>
+    <li>Inline element</li>
+    <li>Stays in same line</li>
+    <li>For styling small parts of text</li>
+  </ul>
+  <p>This is <span style="color:red;">red highlighted text</span> inside a paragraph.</p>
+
+</body>
+</html>

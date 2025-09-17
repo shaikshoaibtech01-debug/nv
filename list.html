@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Lists and Anchor Tag</title>
+</head>
+<body>
+  <h1>HTML Lists</h1>
+  <p>
+    A list in HTML is a way to group related items together in a structured format using special tags.
+  </p>
+
+  <h2>Types of Lists in HTML:</h2>
+  <ol>
+    <li>Ordered List</li>
+    <li>Unordered List</li>
+    <li>Definition/Description List</li>
+  </ol>
+
+  <p>For list items we use the <code>&lt;li&gt;item&lt;/li&gt;</code> tag.</p>
+
+  <!-- Ordered List -->
+  <h3>1. Ordered List</h3>
+  <p>
+    An ordered list displays items with numbers, letters, or roman numerals.<br>
+    For ordered lists, we use the <code>&lt;ol&gt;</code> tag.
+  </p>
+
+  <h4>Attributes in &lt;ol&gt; tag:</h4>
+  <ul>
+    <li><b>type</b> → Defines numbering style (values: "1", "A", "a", "I", "i")</li>
+    <li><b>start</b> → Sets the starting value</li>
+    <li><b>reversed</b> → Boolean attribute; shows list in descending order</li>
+  </ul>
+
+  <h4>Examples:</h4>
+  <p>Default (numbers):</p>
+  <ol>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ol>
+
+  <p>Type "A":</p>
+  <ol type="A">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ol>
+
+  <p>Start from 5:</p>
+  <ol start="5">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ol>
+
+  <p>Reversed order:</p>
+  <ol reversed>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ol>
+
+  <!-- Unordered List -->
+  <h3>2. Unordered List</h3>
+  <p>
+    An unordered list displays items with bullets.<br>
+    For unordered lists, we use the <code>&lt;ul&gt;</code> tag.
+  </p>
+
+  <h4>Example:</h4>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <!-- Definition List -->
+  <h3>3. Definition/Description List</h3>
+  <p>
+    Used for terms and their descriptions.<br>
+    <code>&lt;dl&gt;</code> → Description list container<br>
+    <code>&lt;dt&gt;</code> → Description term<br>
+    <code>&lt;dd&gt;</code> → Description definition
+  </p>
+
+  <h4>Example:</h4>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language, used for creating web pages.</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets, used for styling web pages.</dd>
+  </dl>
+
+  <!-- Anchor Tag -->
+  <h2>Anchor Tag (&lt;a&gt;)</h2>
+  <p>
+    The anchor tag in HTML is used to create hyperlinks. It connects one page to another, or one section of a page to another.
+  </p>
+
+  <h4>Attributes:</h4>
+  <ul>
+    <li><b>href</b> → Specifies the URL or file path (e.g. <code>href="https://google.com"</code>)</li>
+    <li><b>target</b> → Specifies where to open the link:
+      <ul>
+        <li><code>_self</code> → same tab (default)</li>
+        <li><code>_blank</code> → new tab/window</li>
+      </ul>
+    </li>
+    <li><b>title</b> → Shows extra info when you hover over the link</li>
+  </ul>
+
+  <h4>Examples:</h4>
+  <p>
+    <a href="https://google.com" target="_self" title="Go to Google">Google (same tab)</a><br>
+    <a href="https://google.com" target="_blank" title="Opens in new tab">Google (new tab)</a>
+  </p>
+
+</body>
+</html>

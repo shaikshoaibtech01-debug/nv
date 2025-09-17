@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Multimedia Examples</title>
+</head>
+<body>
+  <h1>Multimedia in HTML</h1>
+  <p>
+    Multimedia in HTML means adding different types of media (like images, audio, video, animations, and interactive content) to a webpage along with text.
+  </p>
+  <p><b>Without multimedia:</b> a book with only text.<br>
+     <b>With multimedia:</b> a movie with sound, visuals, and subtitles.</p>
+
+  <h2>1. Image (&lt;img&gt;)</h2>
+  <p>The <code>&lt;img&gt;</code> tag is used to embed images. It is self-closing and an inline element.</p>
+  <ul>
+    <li><b>src</b> → Path of image</li>
+    <li><b>alt</b> → Alternate text</li>
+    <li><b>width/height</b> → Dimensions</li>
+  </ul>
+  <h4>Example:</h4>
+  <img src="./ims.png" alt="Sample Image" width="150" height="150">
+
+  <h2>2. Audio (&lt;audio&gt;)</h2>
+  <p>The <code>&lt;audio&gt;</code> tag is used to embed sound in a webpage.</p>
+  <ul>
+    <li><b>src</b> → Path of audio</li>
+    <li><b>controls</b> → Show play, pause, volume</li>
+    <li><b>autoplay</b> → Play automatically</li>
+    <li><b>loop</b> → Repeat audio</li>
+    <li><b>muted</b> → Start muted</li>
+  </ul>
+  <h4>Example:</h4>
+  <audio controls>
+    <source src="vid1.mp4" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>3. Video (&lt;video&gt;)</h2>
+  <p>The <code>&lt;video&gt;</code> tag is used to embed videos in a webpage.</p>
+  <ul>
+    <li><b>src</b> → Path of video</li>
+    <li><b>controls</b> → Show video controls</li>
+    <li><b>autoplay</b> → Play automatically</li>
+    <li><b>loop</b> → Repeat video</li>
+    <li><b>muted</b> → Start without sound</li>
+    <li><b>poster</b> → Thumbnail before play</li>
+    <li><b>width/height</b> → Size</li>
+  </ul>
+  <h4>Example:</h4>
+  <video width="320" height="240" controls poster="./ims.png">
+    <source src="vid1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>4. Iframe (&lt;iframe&gt;)</h2>
+  <p>The <code>&lt;iframe&gt;</code> tag is used to embed another webpage inside the current page.</p>
+  <ul>
+    <li><b>src</b> → URL of page</li>
+    <li><b>target</b> → Where links open (_self, _blank, _top, etc.)</li>
+    <li><b>frameborder</b> → Show/hide border (deprecated; use CSS instead)</li>
+  </ul>
+  <h4>Example:</h4>
+  <iframe src="https://www.wikipedia.org" width="400" height="250" style="border:1px solid black;"></iframe>
+
+</body>
+</html>
